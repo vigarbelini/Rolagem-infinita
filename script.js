@@ -13,7 +13,6 @@ function loadContent() {
   // Simula uma requisição
   setTimeout(() => {
     const newContent = `
-      <p class"loader">Vinicius Garbelini - <span> 04724-084 </span> <br> Jose Horlando Rufato - <span> 04724-022 </span> <br> <br> Pagina 1 / ${currentPage}</p>
        <div class="id">
     <img src="${imagem()}" alt="">
     <img src="${imagem()}" alt="">
@@ -47,4 +46,5 @@ window.addEventListener('scroll', () => {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
     loadContent();
   }
+
 });
